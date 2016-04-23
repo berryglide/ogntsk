@@ -5,11 +5,11 @@ Tasks file for live @ OGN (live.glidernet.org)
 
 Repository destiné à recevoir les fichiers pour customiser le live OGN pour le terrain d'Issoudun (LFEK) via le lien du type :
 
-http://live.glidernet.org/#c=46.8883333,2.04&z=9&o=1&b=48.5,45.0,0.20,3.5&l=a&w=0&p=2&t=http://[github_task_file_url]
+http://live.glidernet.org/#c=46.8883333,2.04&z=9&o=1&b=48.5,45.0,0.20,3.5&l=a&w=0&p=2&t=http://[github_raw_task_file_url]
 
 où le paramètre
 - c=46.8883333,2.04 indique les coordonnées LFEK
-- t=http://[github_task_file_url] indique l'url du fichier décrivant l'épreuve du jour
+- t=http://[github_raw_task_file_url] indique l'url du fichier décrivant l'épreuve du jour
 
 Pour les autres paramètres, Cf. https://github.com/glidernet/ogn-live#task-file-format
 
@@ -60,8 +60,8 @@ Pour respecter ces conditions on utilise un entrepôt GitHub. Un compte GitHub a
 * Se connecter sur GitHub https://github.com/
 * Ouvrir le repository "cdf2016"
 * Uploader le fichier texte créé précédemment
-* Obtenir l'url du fichier : clic droit sur le bouton "Raw" et copier l'adresse du lien 
-  * exemple : https://github.com/gpornin/ogntsk/raw/master/lfek_tsktst_nowlist.txt
+* Obtenir l'url du fichier : cliquer sur le bouton "Raw" et copier l'url dans la barre d'adresse
+  * exemple : https://raw.githubusercontent.com/berryglide/ogntsk/master/lfek_sample.txt
   * optionel : on peut en plus utiliser le service https://goo.gl/ pour raccourcir l'url
 
 
@@ -80,11 +80,12 @@ avec les paramètres suivants
 Plus de détail : https://github.com/glidernet/ogn-live#task-file-format
 		
 * 2e partie url du fichier de l'épreuve au format JSON
-Récupérer l'url du fichier sous GitHub, par exemple : https://github.com/berryglide/ogntsk/raw/master/lfek_sample.txt
+Récupérer l'url du fichier sous GitHub, par exemple : https://raw.githubusercontent.com/berryglide/ogntsk/master/lfek_sample.txt
 Ajouter cette url dans le paramètre "&t=" en fin d'url OGN.
 
 On obtient finalement une url du type :
-http://live.glidernet.org/#c=46.8883333,2.04&z=9&o=1&b=49.0,44.0,-1.0,4.0&l=a&w=0&p=2&t=https://github.com/berryglide/ogntsk/raw/master/lfek_sample.txt
+http://live.glidernet.org/#c=46.8883333,2.04&z=9&o=1&b=49.0,44.0,-1.0,4.0&l=a&w=0&p=2&t=https://raw.githubusercontent.com/berryglide/ogntsk/master/lfek_sample.txt
+
 
 
 
