@@ -1,7 +1,7 @@
 {"tasks":
 	[
 		{	"name":"epreuve 1",
-			"color":"FFFFFF",
+			"color":"bbbbbb",
 			"legs":[[46.95,2.007],[5000],[47.34,0.94],[25000],[47.48,2.39],[15000],[46.89,2.04],[1000]],
 			"wlist":["DD504B","DD838A","DD98E0","DDAB3A","DDD42F","DDD445","DDD44D","DDD87E","DDD883","DDD88A","DDD89A","DDD89F"]
 		}
