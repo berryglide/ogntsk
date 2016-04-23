@@ -33,40 +33,40 @@ un fichier texte (extension ".txt") contenant les informations du circuit et une
 
 ###Etapes :
 
-1- Creer le fichier ".txt"
+####1 Creer le fichier ".txt"
 Repartir d'un fichier existant en le copiant et passer à l'étape 2.
 Ou bien ouvrir un éditeur de texte (notepad++ ou autre), puis créer un fichier (.txt) avec un nom correspondant à l'épreuve du jour et copier-coller l'exemple ci-dessus.
 
 
-2- Définir le circuit
+####2 Définir le circuit
 Modifier les informations en fonction de l'épreuve du jour et en respectant le format JSON (http://www.json.org/) :
- - name : le nom du circuit, par exemple n° de l'épreuve.
- - legs : tableau des coordonnées des point de virages et des zones d'observations
-	pour chaque point, y-compris départ et arriviée, on a 2 éléments entre crochets :
+- name : le nom du circuit, par exemple n° de l'épreuve.
+- legs : tableau des coordonnées des point de virages et des zones d'observations
+	pour chaque point, y-compris départ et arrivée, on a 2 éléments entre crochets :
 		[lat,long] : coordonnées en décimal du point de virage, se reporter au fichier "ACI2016_turnpoints_decimal.csv" pour trouver les coordonnées en décimal.
 		[rayon] : rayon de la zone d'observation en mètres (en cas d'AST utiliser 500)
 	Les éléments entre crochets sont séparés par des virgules ","
 	Ajouter autant d'élements que nécessaire.
 	L'ensemble des éléments est lui-même entre crochets.
- - wlist : liste des identifiants FLARM auxquels on veut restreindre la visualisation. Cette liste est optionnelle.
+- wlist : liste des identifiants FLARM auxquels on veut restreindre la visualisation. Cette liste est optionnelle.
 	Si présente, seuls les Flarms identifiés dans la liste seront affichés.
 	Si absente, tous les Flarm "visibles" seront affichés.
 	Cf. plus bas pour obtenir la liste des identifiants Flarm.
 
 
-3- Uploader le fichier sur un serveur
+####3 Uploader le fichier sur un serveur
 Le fichier doit pourvoir être téléchargé par la page OGN.
 Il faut donc le téléchager sur un serveur. Et il faut également que ce serveur implémente la spécification CORS (http://enable-cors.org/)
 Pour respecter ces conditions on utilise un entrepôt GitHub. Un compte GitHub a été créé avec le compte scoring@berryglide.net
- - Se connecter sur GitHub https://github.com/
- - Ouvrir le repository "cdf2016"
- - Uploader le fichier texte créé précédemment
- - Obtenir l'url du fichier : clic droit sur le bouton "Raw" et copier l'adresse du lien 
-	exemple : https://github.com/gpornin/ogntsk/raw/master/lfek_tsktst_nowlist.txt
-	optionel : on peut en plus utiliser le service https://goo.gl/ pour raccourcir l'url
+- Se connecter sur GitHub https://github.com/
+- Ouvrir le repository "cdf2016"
+- Uploader le fichier texte créé précédemment
+- Obtenir l'url du fichier : clic droit sur le bouton "Raw" et copier l'adresse du lien 
+	--exemple : https://github.com/gpornin/ogntsk/raw/master/lfek_tsktst_nowlist.txt
+	--optionel : on peut en plus utiliser le service https://goo.gl/ pour raccourcir l'url
 
 
-4- Fabriquer le lien OGN final
+####4 Fabriquer le lien OGN final
 L'url finale est composée de parties principales :
 
  - 1ere partie url OGN : http://live.glidernet.org/#c=46.8883333,2.04&z=9&o=1&b=49.0,44.0,-1.0,4.0&l=a&w=0&p=2
