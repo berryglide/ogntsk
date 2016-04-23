@@ -42,7 +42,7 @@ Ou bien ouvrir un éditeur de texte (notepad++ ou autre), puis créer un fichier
 Modifier les informations en fonction de l'épreuve du jour et en respectant le format JSON (http://www.json.org/) :
 * name : le nom du circuit, par exemple n° de l'épreuve.
 * legs : tableau des coordonnées des point de virages et des zones d'observations pour chaque point, y-compris départ et arrivée, on a 2 éléments entre crochets :
-  * [lat,long] : coordonnées en décimal du point de virage, se reporter au fichier "ACI2016_turnpoints_decimal.csv" pour trouver les coordonnées en décimal.
+  * [lat,long] : coordonnées en décimal du point de virage, se reporter au fichier [ACI2016_turnpoints_decimal.csv](https://docs.google.com/spreadsheets/d/1UsPojxs7OVxnAw9IzZCAAyTUT9_x7tmEmIborCp2MtM) pour trouver les coordonnées en décimal.
   * [rayon] : rayon de la zone d'observation en mètres (en cas d'AST utiliser 500)
 Les éléments entre crochets sont séparés par des virgules ","
 Ajouter autant d'élements que nécessaire.
