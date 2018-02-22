@@ -1,6 +1,6 @@
 # ogntsk
 
-##Résumé
+## Résumé
 Tasks file for live @ OGN (live.glidernet.org)
 
 Repository destiné à recevoir les fichiers pour customiser le live OGN pour le terrain d'Issoudun (LFEK) via le lien du type :
@@ -31,14 +31,14 @@ un fichier texte (extension ".txt") contenant les informations du circuit et une
 }
 
 
-###Etapes :
+### Etapes :
 
-####1 Creer le fichier ".txt"
+#### 1 Creer le fichier ".txt"
 Repartir d'un fichier existant en le copiant et passer à l'étape 2.
 Ou bien ouvrir un éditeur de texte (notepad++ ou autre), puis créer un fichier (.txt) avec un nom correspondant à l'épreuve du jour et copier-coller l'exemple ci-dessus.
 
 
-####2 Définir le circuit
+#### 2 Définir le circuit
 Modifier les informations en fonction de l'épreuve du jour et en respectant le format JSON (http://www.json.org/) :
 * name : le nom du circuit, par exemple n° de l'épreuve.
 * legs : tableau des coordonnées des point de virages et des zones d'observations pour chaque point, y-compris départ et arrivée, on a 2 éléments entre crochets :
@@ -53,7 +53,7 @@ L'ensemble des éléments est lui-même entre crochets.
   * Cf. plus bas pour obtenir la liste des identifiants Flarm.
 
 
-####3 Uploader le fichier sur un serveur
+#### 3 Uploader le fichier sur un serveur
 Le fichier doit pourvoir être téléchargé par la page OGN.
 Il faut donc le téléchager sur un serveur. Et il faut également que ce serveur implémente la spécification CORS (http://enable-cors.org/)
 Pour respecter ces conditions on utilise un entrepôt GitHub. Un compte GitHub a été créé avec le compte scoring@berryglide.net
@@ -65,7 +65,7 @@ Pour respecter ces conditions on utilise un entrepôt GitHub. Un compte GitHub a
   * optionel : on peut en plus utiliser le service https://goo.gl/ pour raccourcir l'url
 
 
-####4 Fabriquer le lien OGN final
+#### 4 Fabriquer le lien OGN final
 L'url finale est composée de parties principales :
 
 * 1ere partie url OGN : http://live.glidernet.org/#c=46.8883333,2.04&z=9&o=1&b=49.0,44.0,-1.0,4.0&l=a&w=0&p=2
@@ -89,7 +89,7 @@ http://live.glidernet.org/#c=46.8883333,2.04&z=9&o=1&b=49.0,44.0,-1.0,4.0&l=a&w=
 
 
 
-###ANNEXE : Récupération des identifiants Flarm :
+### ANNEXE : Récupération des identifiants Flarm :
 Les identifiants uniques des Flarm sont de la forme "DDxxxx" (ou plus rarement n° ICAO de l'aéronef)
 Pour obtenir les identifiants des Flarm, le mieux est d'avoir un fichier IGC issus des Flarm.
 L'identifiant est visible
